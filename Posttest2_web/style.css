@@ -1,0 +1,51 @@
+body {
+    background-image: url('kucing.jpg');
+   
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.674); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
+    padding: 20px; 
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.liya {
+    border-radius: 50px;
+}
+
+.Ocha {
+    background-color: rgb(255, 212, 219);
+}
+
+li {
+    list-style: none;
+    width: 830px;
+    height: 15px;
+    background: white;
+    color: black;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px
+    
+}
+
+.o10 {
+    background-color: rgb(255, 212, 219);
+}
+
+td {
+    color: black;
+}
