@@ -1,0 +1,69 @@
+const modeButton = document.getElementById('modeButton');
+modeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+    modeButton.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+});
+
+
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const navbar = document.getElementById('navbar');
+hamburgerMenu.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+
+const popupBox = document.getElementById('popupBox');
+const closePopup = document.getElementById('closePopup');
+const shopNowBtn = document.getElementById('shopNowBtn');
+
+
+shopNowBtn.addEventListener('click', () => {
+    popupBox.style.display = 'block';
+});
+
+
+closePopup.addEventListener('click', () => {
+    popupBox.style.display = 'none';
+});
+
+
+const productCards = document.querySelectorAll('.product-card img');
+productCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.1)';
+    });
+    card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+    });
+});
+
+
+
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+
+    const name = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const password = document.getElementById('password').value;
+
+    alert(`Login berhasil!\nNama: ${name}\nUmur: ${age}`);
+
+});
+
+
+document.getElementById('search').addEventListener('keyup', function() {
+    const query = this.value;
+    if (query.length > 2) {
+        fetch(`live_search.php?query=${query}`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('searchResults').innerHTML = data;
+                document.getElementById('searchResults').style.display = 'block';
+            });
+    } else {
+        document.getElementById('searchResults').style.display = 'none';
+    }
+});

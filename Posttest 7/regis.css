@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Soft Pink Background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Section Styling */
+.form-section {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-section h2 {
+    color: #d81b60; /* Soft Dark Pink */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Input Fields Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #d81b60; /* Label Text Color */
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    padding: 10px;
+    border: 2px solid #f8bbd0; /* Soft Pink Border */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fce4ec; /* Soft Pink Background for Inputs */
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    border-color: #d81b60; /* Highlighted border on focus */
+    outline: none;
+}
+
+/* Submit Button Styling */
+button {
+    background-color: #d81b60; /* Pink Button */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Table-like Layout for Form */
+form {
+    display: table;
+    width: 100%;
+}
+
+label, input, button {
+    display: table-row;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: calc(100% - 20px); /* Ensure full-width input minus padding */
+}
+
+button {
+    width: 100%; /* Full width button */
+}
